@@ -30,6 +30,7 @@ Configure the Magento instance
   1. Database user should be ```magento```
   1. Database password should be ```magento```
 2. In 'Web access options'
+  1. Enter a Base URL of ```https://magento-dev```.
   1. Check "Skip Base URL Validation Before Next Step"
 
 Otherwise select defaults and/or fill out as you like.  More help can be found at http://www.magentocommerce.com/knowledge-base/entry/magento-installation-cheat-sheet.
@@ -38,3 +39,6 @@ Make sure you can acccess the front end and back end of the magento instance usi
 
 ## Integrating
 Follow the guide [here] (https://support.shippingeasy.com/hc/en-us/articles/203085049-How-to-Integrate-your-Magento-store-with-ShippingEasy-step-by-step-guide-with-pictures-)
+
+## Troubleshooting
+Have seen a few issues related to redirects.  If so, look at terminal output to see the URL being accessed, then try to curl against it with the -v option to see what is going on.
