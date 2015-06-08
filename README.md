@@ -1,3 +1,11 @@
+## WTF
+
+This is nginx fronting Magento talking to MySQL all in a docker-compose cluster.
+nginx is configured to forward all requests from 80 and 443 to magento on port 8080,
+so those ports should be available on your docker host.  443 will be served over
+ssl with a self-signed certificate.  You can modify the nginx configuration in
+nginx.conf as needed to emulate a customer's self-hosted setup.
+
 ## Prerequisites
 * docker
 * docker-compose
